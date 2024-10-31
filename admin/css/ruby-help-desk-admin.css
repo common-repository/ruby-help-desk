@@ -1,0 +1,527 @@
+/**
+ * All of the CSS for admin-specific functionality is
+ * included in this file.
+ */
+
+ .rhd_select{
+   width: 100%;
+ }
+#ticket_options label{
+  font-weight: bold;
+}
+#ticket_options .ticket_status_label, .support_ticket_status .ticket_status_label, .rhd_recent_tickets .ticket_status_label{
+  float:left;
+  margin-left: 4px;
+  padding: 5px;
+  background: rgba(49, 156, 57, 0.64);
+  color: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#ticket_creator img.avatar{
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  border: solid 2px #8e8e8e;
+}
+#ticket_creator #creator_img{
+  width: 24%;
+  float: right;
+  height: 112px;
+}
+#ticket_creator #creator_info{
+  padding-left: 5px;
+
+  float:left;
+}
+#ticket_creator #creator_info ul li{
+  font-size: 90%;
+  padding-left: 110px;
+  position: relative;
+}
+#ticket_creator #creator_info strong{
+  font-size: 10pt;
+  display: block;
+  margin-top: 20px;
+}
+#ticket_creator #creator_info span{
+  background: rgba(0, 0, 0, 0.52);
+  color: #ffffff;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+}
+.open_ticket{
+  background: rgba(38, 121, 48, 0.52) !important;
+}
+.closed_ticket{
+  background: rgba(169, 19, 19, 0.52) !important;
+}
+#ticket_replies .inside{
+  margin: 0 0 0 0 !important;
+  padding: 0 0 0 0 !important;
+}
+.ticket_reply{
+  width:100%;
+  padding: 10px;
+  border-bottom:2px solid #f1f1f1;
+}
+.reply_avatar{
+  float:left;
+  width:15%;
+  text-align: center;
+  border-right: 2px dashed #f1f1f1;
+}
+.reply_avatar img{
+  width:60px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+.reply_content{
+  width:80%;
+  float:left;
+  padding: 10px;
+}
+
+.ticket_reply .reply_username{
+  display: block;
+  padding-left: 10px;
+  font-weight: bold;
+}
+.ticket_reply .reply_time{
+  display: block;
+  font-size:8pt;
+  font-style: italic;
+
+}
+.button-close{
+  border-color: #bf4444 !important;
+  background: #d24e4e !important;
+  color: #ffffff !important;
+}
+
+#ticket_message hr{
+  width: 50%;
+  margin-top: 50px;
+  color: #000000;
+  border-top: 1px dashed #a9a8a8;
+  border-bottom: 1px dashed #a9a8a8;
+}
+
+#ticket_message #ticket_content p{
+  font-size: 10pt;
+  padding: 15px;
+}
+
+#ticket_message ol li{
+  font-size: 11pt;
+}
+
+.ticket_reply hr{
+ width: 50%;
+ margin-top: 50px;
+ color: #000000;
+ border-top: 1px dashed #a9a8a8;
+ border-bottom: 1px dashed #a9a8a8;
+}
+.reply_content ol li{
+  font-size: 11pt;
+}
+.reply_content h3{
+  font-size: 12pt;
+}
+
+
+#rhd_settings_page .group{
+  background: #ffffff;
+  padding: 10px;
+  border: 1px solid #ccc;
+
+}
+
+/*  Dashboard Widget  */
+.rhd_status_list{
+  overflow: hidden;
+  margin: 0;
+}
+.rhd_status_list li{
+    width: 50%;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 0;
+    border-top: 1px solid #ececec;
+    color: #aaa;
+}
+.rhd_status_list li a {
+    display: inline-block;
+    color: #aaa;
+    padding: 12px 15px;
+    -webkit-transition: all ease .5s;
+    position: relative;
+    font-size: 9pt;
+}
+.rhd_status_list li .dashicons{
+  margin:5px;
+  font-size: 24pt;
+}
+
+.rhd_status_list li.new-tickets{
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+}
+.rhd_status_list li.new-tickets .dashicons{
+  color:#6db16f;
+}
+
+
+.rhd_status_list li.in-progress-tickets{
+  border-right: 1px solid #ececec;
+}
+.rhd_status_list li.in-progress-tickets .dashicons{
+  color:#009688;
+}
+
+.rhd_status_list li.closed-tickets{
+      border-bottom: 1px solid #ececec;
+      border-right: 1px solid #ececec;
+      border-left: 1px solid #ececec;
+}
+.rhd_status_list li.closed-tickets .dashicons{
+  color:#f38989;
+}
+
+.rhd_status_list li.total-tickets{
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+
+}
+.rhd_status_list li.total-tickets .dashicons{
+  color:#607d8b;
+}
+.rhd_recent_tickets li{
+  border-top: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  padding: 10px;
+  margin:0;
+}
+.rhd_recent_tickets li span.since{
+  color:#aaa;
+  font-style: italic;
+}
+.rhd_recent_tickets li:last-child{
+  border-bottom: 1px solid #ececec;
+}
+.rhd_dashboard_widget h4{
+  font-weight: bold !important;
+  color:#808080 !important;
+  margin-top: 15px !important;
+}
+.rhd_recent_tickets .ticket_status_label{
+  padding: 4px;
+  font-size: 8pt;
+  opacity: 0.5;
+  border-radius: 0;
+  float:right;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.rhd_spinner {
+background: url('../images/wpspin_light.gif') no-repeat;
+background-size: 16px 16px;
+opacity: .7;
+filter: alpha(opacity=70);
+width: 16px;
+height: 16px;
+margin: 5px 5px 5px 5px;
+display: none;
+}
+.rhd_spinner_result{
+  color: #408640;
+  display: none;
+  margin: 5px;
+
+}
+
+/**
+* Custom Fields Page
+*
+*/
+#rhd_custom_fields #custom_fields_components{
+  float: right;
+  width:25%;
+  overflow: auto;
+  padding: 0 .9em;
+  border: 1px solid #dfdfdf;
+  background-color: #fdfdfd;
+}
+#rhd_custom_fields #custom_fields_components .draggable-custom-field-item {
+  position: relative;
+  display: block;
+  margin-right: 8px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  color: #464646;
+  text-align: left;
+  text-decoration: none;
+  font-size: 12pt;
+  padding: 15px 15px 15px 32px;
+}
+#rhd_custom_fields #custom_fields_components .draggable-custom-field-item b {
+  position: absolute;
+  left: 8px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  background-image: url('../images/vfb-form-items.png?d=20130712');
+  background-repeat: no-repeat;
+  line-height: 16px;
+}
+#rhd_custom_fields #active_custom_fields b {
+  position: absolute;
+  right: 8px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  background-image: url('../images/vfb-form-items.png?d=20130712');
+  background-repeat: no-repeat;
+  line-height: 16px;
+}
+.delete_custom_field{
+  right: 15px;
+  float: right;
+  position: relative;
+  bottom: 4px;
+}
+.delete_custom_field .dashicons-trash{
+    font-size: 11pt !important;
+    text-decoration: none;
+}
+
+.form-element-address b {
+    background-position: -128px 0
+}
+
+.form-element-autocomplete b {
+    background-position: -384px 0
+}
+
+.form-element-checkbox b {
+    background-position: -672px 0
+}
+
+.form-element-color b {
+    background-position: 0 0
+}
+
+.form-element-currency b {
+    background-position: -64px 0
+}
+
+.form-element-date b {
+    background-position: -224px 0
+}
+
+.form-element-digits b {
+    background-position: -832px 0
+}
+
+.form-element-email b {
+    background-position: -160px 0
+}
+
+.form-element-file b {
+    background-position: -512px 0
+}
+.form-element-attachment b {
+    background-position: -512px 0
+}
+.form-element-hidden b {
+    background-position: -544px 0
+}
+
+.form-element-html b {
+    background-position: -800px 0
+}
+
+.form-element-instructions b {
+    background-position: -256px 0
+}
+
+.form-element-ip b {
+    background-position: -448px 0
+}
+
+.form-element-max b {
+    background-position: -576px 0
+}
+
+.form-element-min b {
+    background-position: -608px 0
+}
+
+.form-element-name b {
+    background-position: -320px 0
+}
+
+.form-element-pagebreak b {
+    background-position: -768px 0
+}
+
+.form-element-password b {
+    background-position: -352px 0
+}
+
+.form-element-phone b {
+    background-position: -96px 0
+}
+
+.form-element-radio b {
+    background-position: -704px 0
+}
+
+.form-element-range b {
+    background-position: -640px 0
+}
+
+.form-element-select b {
+    background-position: -416px 0
+}
+
+.form-element-text b {
+    background-position: -736px 0
+}
+.form-element-editor b {
+    background-position: -736px 0
+}
+.form-element-textarea b {
+    background-position: -32px 0
+}
+
+.form-element-time b {
+    background-position: -192px 0
+}
+
+.form-element-username b {
+    background-position: -288px 0
+}
+
+.form-element-url b {
+    background-position: -480px 0
+}
+
+#rhd_custom_fields #active_custom_fields{
+  float: left;
+  width:65%;
+  overflow: auto;
+  border: 1px solid #dfdfdf;
+  background-color: #fdfdfd;
+  padding: 10px;
+  border-radius: 5px;
+}
+#active_custom_fields h3{
+  padding: 15px;
+}
+#active_custom_fields .dashicons-menu{
+  cursor: move;
+}
+#active_custom_fields .dashicons-trash{
+  cursor: pointer;
+}
+#active_custom_fields .dashicons{
+  line-height: 26px;
+}
+#active_custom_fields .group label{
+  font-weight: bold;
+}
+#custom_fields.postbox label{
+  display: block;
+  font-weight: bold;
+}
+#custom_fields.postbox input[type=text]{
+  width:100% !important;
+}
+#custom_fields.postbox input[type=date]{
+  width:100% !important;
+}
+#custom_fields.postbox textarea{
+  width:100% !important;
+}
+#active_custom_fields .ui-state-highlight{
+  height:50px;
+  background: #e8a3bd;
+  border: 1px #e8a3bd solid;
+}
+.clearboth {
+  height: 0;
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+
+.rhd_template_tags, .rhd_template_units {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.rhd_template_tags li, .rhd_template_units li {
+    float: left;
+}
+
+.rhd_template_tag, .rhd_template_unit {
+    background: #eee;
+    border-radius: 3px 0 0 3px;
+    color: #999;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 20px 0 23px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    -webkit-transition: color 0.2s;
+}
+
+.rhd_template_tag::before, .rhd_template_unit::before {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+    content: '';
+    height: 6px;
+    left: 10px;
+    position: absolute;
+    width: 6px;
+    top: 10px;
+}
+
+.rhd_template_tag::after, .rhd_template_unit::after {
+    background: #fff;
+    border-bottom: 13px solid transparent;
+    border-left: 10px solid #eee;
+    border-top: 13px solid transparent;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.rhd_template_tag:hover, .rhd_template_unit:hover {
+    background-color: crimson;
+    color: white;
+}
+
+.rhd_template_tag:hover::after, .rhd_template_unit:hover::after {
+    border-left-color: crimson;
+}
